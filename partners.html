@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title -->
+    <title>Our Partners – Total Logistics Limited</title>
+
+    <!-- ==================== FAVICONS ==================== -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+    
+    <!-- Apple & Android Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="image/site.webmanifest" />
+
+    <!-- ==================== SEO Meta Tags ==================== -->
+    <meta name="description" content="TLL's global network of trusted shipping, airline, and logistics partners across 50+ countries. Strategic partnerships for reliable international freight and supply chain solutions." />
+    <meta name="keywords" content="logistics partners, shipping partners Bangladesh, freight partners, airline partners, global logistics network, Total Logistics partners, cargo partners BD" />
+    <meta name="author" content="Total Logistics Limited" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Our Partners – Total Logistics Limited" />
+    <meta property="og:description" content="TLL's trusted global network of shipping lines, airlines, and logistics partners across 50+ countries." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tll.com.bd/partners" />
+    <meta property="og:image" content="https://tll.com.bd/image/android-chrome-512x512.png" />
+    <meta property="og:site_name" content="Total Logistics Limited" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Partners – Total Logistics Limited" />
+    <meta name="twitter:description" content="Our strong global network of logistics and shipping partners." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{--red:#ce2026;--red-dk:#8c0f13;--navy:#0a1628;--navy2:#0f2044;--gold:#f0a500;--white:#ffffff;--light:#f4f6fa;--mid:#8a95a8;--text:#1a2540;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+
+  /* HEADER */
+  header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,22,40,0.97);backdrop-filter:blur(12px);border-bottom:2px solid var(--red);transition:background .3s;}
+  .header-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;}
+  .logo img{height:58px;width:auto;display:block;}
+  nav ul{list-style:none;display:flex;gap:6px;align-items:center;}
+  nav a{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#d0d8ea;text-decoration:none;padding:8px 14px;border-radius:3px;position:relative;transition:color .25s;}
+  nav a::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--red);transform:scaleX(0);transition:transform .25s;transform-origin:center;}
+  nav a:hover{color:var(--white);}
+  nav a:hover::after,nav a.active::after{transform:scaleX(1);}
+  nav a.active{color:var(--white);}
+  .nav-cta{background:var(--red)!important;color:var(--white)!important;border-radius:4px!important;padding:8px 20px!important;}
+  .nav-cta::after{display:none!important;}
+  .nav-cta:hover{background:var(--red-dk)!important;}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+  .hamburger span{width:26px;height:2px;background:var(--white);border-radius:2px;display:block;}
+
+  /* PAGE HERO */
+  .page-hero{
+    background:linear-gradient(135deg,rgba(10,22,40,.96) 0%,rgba(140,15,19,.82) 100%),
+    url('https://tll.com.bd/wp-content/uploads/2025/02/rsz_613292_273065.png') center/cover no-repeat;
+    min-height:50vh;display:flex;align-items:flex-end;padding:160px 32px 80px;
+  }
+  .page-hero-inner{max-width:1320px;margin:0 auto;}
+  .breadcrumb{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold);}
+  .page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,100px);color:var(--white);line-height:.95;}
+  .page-hero p{font-size:18px;color:rgba(255,255,255,.65);margin-top:18px;max-width:560px;line-height:1.7;}
+
+  section{padding:100px 32px;}
+  .section-inner{max-width:1320px;margin:0 auto;}
+  .section-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block;}
+  .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,60px);line-height:1.05;color:var(--navy);}
+
+  /* STATS BAND */
+  .stats-band{background:var(--red);padding:60px 32px;}
+  .stats-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+  .stat-item .num{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--white);line-height:1;}
+  .stat-item .num span{color:rgba(255,255,255,.5);}
+  .stat-item .lbl{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:6px;}
+
+  /* PARTNER CATEGORIES */
+  .partner-section{background:var(--light);}
+  .partner-category{margin-bottom:72px;}
+  .partner-category:last-child{margin-bottom:0;}
+  .cat-header{display:flex;align-items:center;gap:20px;margin-bottom:36px;padding-bottom:20px;border-bottom:2px solid #dde3ef;}
+  .cat-icon{width:52px;height:52px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
+  .cat-header h3{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--navy);}
+  .cat-header p{font-size:14px;color:var(--mid);margin-top:4px;}
+  .partner-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .partner-card{background:var(--white);border:2px solid #e8edf4;border-radius:8px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;transition:border-color .3s,box-shadow .3s,transform .3s;min-height:130px;cursor:default;}
+  .partner-card:hover{border-color:var(--red);box-shadow:0 10px 36px rgba(206,32,38,.1);transform:translateY(-3px);}
+  .partner-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--navy);letter-spacing:1px;line-height:1.1;}
+  .partner-region{font-size:11px;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;}
+  .partner-flag{font-size:22px;}
+
+  /* BECOME A PARTNER */
+  .become{background:var(--navy);}
+  .become-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+  .become-text span{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px;}
+  .become-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,58px);color:var(--white);line-height:1.05;margin-bottom:24px;}
+  .become-text p{font-size:16px;color:#8090ab;line-height:1.8;margin-bottom:16px;}
+  .become-benefits{list-style:none;margin:28px 0 36px;display:flex;flex-direction:column;gap:14px;}
+  .become-benefits li{display:flex;align-items:center;gap:14px;font-size:15px;color:#bcc8df;}
+  .become-benefits li::before{content:'✦';color:var(--gold);font-size:12px;flex-shrink:0;}
+  .btn-primary{background:var(--red);color:var(--white);padding:16px 40px;font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .25s,transform .2s;display:inline-block;}
+  .btn-primary:hover{background:var(--red-dk);transform:translateY(-2px);}
+  .become-map{background:rgba(255,255,255,.04);border:2px solid rgba(255,255,255,.08);border-radius:12px;padding:40px;text-align:center;}
+  .map-visual{font-size:80px;display:block;margin-bottom:20px;}
+  .map-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;}
+  .map-stat{background:rgba(255,255,255,.05);padding:20px;border-radius:8px;text-align:center;}
+  .map-stat strong{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--white);display:block;line-height:1;}
+  .map-stat span{font-size:12px;color:var(--mid);text-transform:uppercase;letter-spacing:1.5px;}
+
+  /* FOOTER */
+  footer{background:#06101f;color:#8090ab;padding:60px 32px 32px;}
+  .footer-inner{max-width:1320px;margin:0 auto;}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:13px;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.08);}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:none;}
+  .reveal-delay-1{transition-delay:.1s;}
+  .reveal-delay-2{transition-delay:.15s;}
+  .reveal-delay-3{transition-delay:.2s;}
+
+  @media(max-width:1100px){.partner-grid{grid-template-columns:repeat(4,1fr);}}
+  @media(max-width:900px){
+    nav ul{display:none;position:fixed;top:0;right:-320px;height:100vh;width:280px;background:var(--navy);flex-direction:column;align-items:flex-start;padding:100px 32px 40px;gap:4px;transition:right .35s;z-index:999;}
+    nav ul.open{right:0;display:flex;}
+    .hamburger{display:flex;}
+    .stats-inner{grid-template-columns:repeat(2,1fr);}
+    .partner-grid{grid-template-columns:repeat(3,1fr);}
+    .become-grid{grid-template-columns:1fr;gap:48px;}
+  }
+  @media(max-width:600px){
+    .header-inner{padding:12px 20px;}
+    section{padding:70px 20px;}
+    .partner-grid{grid-template-columns:repeat(2,1fr);}
+    .stats-inner{grid-template-columns:repeat(2,1fr);}
+    .map-stats{grid-template-columns:1fr 1fr;}
+  }
+
+  
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* additional whatsapp styles */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="wp-content/uploads/2025/02/tll-logo.png" alt="Total Logistics Limited" onerror="this.style.display='none'"/>
+    </a>
+    <nav>
+      <ul id="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="partners.html" class="active">Partners</a></li>
+        <li><a href="project-logistics.html">Project Logistics</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Partners</div>
+    <h1>Our Global<br/><span style="color:var(--red)">Partners</span></h1>
+    <p>A worldwide network of trusted shipping lines, airlines, and logistics agents — connecting Bangladesh to every corner of the globe.</p>
+  </div>
+</div>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="num">50<span>+</span></div>
+      <div class="lbl">Partner Countries</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="num">120<span>+</span></div>
+      <div class="lbl">Agent Network</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="num">15<span>+</span></div>
+      <div class="lbl">Shipping Lines</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="num">10<span>+</span></div>
+      <div class="lbl">Airline Partners</div>
+    </div>
+  </div>
+</div>
+
+<!-- PARTNER SECTIONS -->
+<section class="partner-section">
+  <div class="section-inner">
+
+    <!-- Shipping Lines -->
+    <div class="partner-category reveal">
+      <div class="cat-header">
+        <div class="cat-icon">🚢</div>
+        <div>
+          <h3>Ocean Shipping Lines</h3>
+          <p>Our preferred carrier partners for FCL and LCL shipments worldwide</p>
+        </div>
+      </div>
+      <div class="partner-grid">
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">Maersk</div><div class="partner-region">Denmark</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">MSC</div><div class="partner-region">Switzerland</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">CMA CGM</div><div class="partner-region">France</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">COSCO</div><div class="partner-region">China</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">Evergreen</div><div class="partner-region">Taiwan</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">Hapag-Lloyd</div><div class="partner-region">Germany</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">ONE Line</div><div class="partner-region">Japan</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">Yang Ming</div><div class="partner-region">Taiwan</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">PIL</div><div class="partner-region">Singapore</div></div>
+        <div class="partner-card"><span class="partner-flag">🌐</span><div class="partner-logo">X-Press</div><div class="partner-region">Singapore</div></div>
+      </div>
+    </div>
+
+    <!-- Airlines -->
+    <div class="partner-category reveal">
+      <div class="cat-header">
+        <div class="cat-icon">✈️</div>
+        <div>
+          <h3>Airline & Air Cargo Partners</h3>
+          <p>Our trusted airline partners for time-critical air freight solutions</p>
+        </div>
+      </div>
+      <div class="partner-grid">
+        <div class="partner-card"><span class="partner-flag">🇧🇩</span><div class="partner-logo">Biman Bangladesh</div><div class="partner-region">Bangladesh</div></div>
+        <div class="partner-card"><span class="partner-flag">🇶🇦</span><div class="partner-logo">Qatar Airways Cargo</div><div class="partner-region">Qatar</div></div>
+        <div class="partner-card"><span class="partner-flag">🇦🇪</span><div class="partner-logo">Emirates SkyCargo</div><div class="partner-region">UAE</div></div>
+        <div class="partner-card"><span class="partner-flag">🇸🇬</span><div class="partner-logo">Singapore Airlines</div><div class="partner-region">Singapore</div></div>
+        <div class="partner-card"><span class="partner-flag">🇹🇷</span><div class="partner-logo">Turkish Cargo</div><div class="partner-region">Turkey</div></div>
+        <div class="partner-card"><span class="partner-flag">🇨🇳</span><div class="partner-logo">China Southern</div><div class="partner-region">China</div></div>
+        <div class="partner-card"><span class="partner-flag">🇬🇧</span><div class="partner-logo">British Airways</div><div class="partner-region">United Kingdom</div></div>
+        <div class="partner-card"><span class="partner-flag">🇩🇪</span><div class="partner-logo">Lufthansa Cargo</div><div class="partner-region">Germany</div></div>
+      </div>
+    </div>
+
+    <!-- Global Agents -->
+    <div class="partner-category reveal">
+      <div class="cat-header">
+        <div class="cat-icon">🌍</div>
+        <div>
+          <h3>International Freight Agents</h3>
+          <p>Our on-ground logistics agents ensuring seamless operations worldwide</p>
+        </div>
+      </div>
+      <div class="partner-grid">
+        <div class="partner-card"><span class="partner-flag">🇨🇳</span><div class="partner-logo">Shanghai Agent</div><div class="partner-region">China</div></div>
+        <div class="partner-card"><span class="partner-flag">🇮🇳</span><div class="partner-logo">Mumbai Agent</div><div class="partner-region">India</div></div>
+        <div class="partner-card"><span class="partner-flag">🇸🇬</span><div class="partner-logo">Singapore Agent</div><div class="partner-region">Singapore</div></div>
+        <div class="partner-card"><span class="partner-flag">🇩🇪</span><div class="partner-logo">Hamburg Agent</div><div class="partner-region">Germany</div></div>
+        <div class="partner-card"><span class="partner-flag">🇬🇧</span><div class="partner-logo">London Agent</div><div class="partner-region">United Kingdom</div></div>
+        <div class="partner-card"><span class="partner-flag">🇺🇸</span><div class="partner-logo">New York Agent</div><div class="partner-region">USA</div></div>
+        <div class="partner-card"><span class="partner-flag">🇦🇪</span><div class="partner-logo">Dubai Agent</div><div class="partner-region">UAE</div></div>
+        <div class="partner-card"><span class="partner-flag">🇯🇵</span><div class="partner-logo">Tokyo Agent</div><div class="partner-region">Japan</div></div>
+        <div class="partner-card"><span class="partner-flag">🇰🇷</span><div class="partner-logo">Busan Agent</div><div class="partner-region">South Korea</div></div>
+        <div class="partner-card"><span class="partner-flag">🇳🇱</span><div class="partner-logo">Rotterdam Agent</div><div class="partner-region">Netherlands</div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BECOME A PARTNER -->
+<section class="become">
+  <div class="section-inner">
+    <div class="become-grid">
+      <div class="become-text reveal">
+        <span>Join Our Network</span>
+        <h2>Become a TLL Partner</h2>
+        <p>We are always looking to expand our global network with reliable, professional freight agents and logistics providers who share our commitment to excellence.</p>
+        <p>As a TLL partner, you gain access to Bangladesh's growing import and export market, backed by our local expertise and established relationships with major importers and exporters.</p>
+        <ul class="become-benefits">
+          <li>Access to Bangladesh's booming trade market</li>
+          <li>Dedicated relationship management & communication</li>
+          <li>Competitive inter-company rates and SLA agreements</li>
+          <li>Joint business development opportunities</li>
+          <li>Real-time shipment coordination and support</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Apply to Partner with TLL</a>
+      </div>
+      <div class="become-map reveal reveal-delay-1">
+        <span class="map-visual">🌐</span>
+        <p style="color:#8090ab;font-size:16px;line-height:1.7;">Our network spans every major trade corridor — connecting Chittagong and Dhaka to the world's busiest ports and airports.</p>
+        <div class="map-stats">
+          <div class="map-stat"><strong>50<span style="color:var(--gold)">+</span></strong><span>Countries</span></div>
+          <div class="map-stat"><strong>120<span style="color:var(--gold)">+</span></strong><span>Agents</span></div>
+          <div class="map-stat"><strong>6</strong><span>Continents</span></div>
+          <div class="map-stat"><strong>24/7</strong><span>Coordination</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2025 Total Logistics Limited. All rights reserved.</span>
+      <a href="index.html" style="color:var(--red);text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger=document.getElementById('hamburger'),nav=document.getElementById('main-nav');
+  hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!nav.contains(e.target))nav.classList.remove('open');});
+  window.addEventListener('scroll',()=>{document.getElementById('site-header').style.background=window.scrollY>60?'rgba(6,16,31,0.98)':'rgba(10,22,40,0.97)';});
+  const reveals=document.querySelectorAll('.reveal');
+  reveals.forEach(el=>new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08}).observe(el));
+</script>
+</body>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/8801959083615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+       alt="WhatsApp">
+</a>
+</html>

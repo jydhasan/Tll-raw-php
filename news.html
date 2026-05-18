@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title -->
+    <title>News & Updates – Total Logistics Limited</title>
+
+    <!-- ==================== FAVICONS ==================== -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+    
+    <!-- Apple & Android Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="image/site.webmanifest" />
+
+    <!-- ==================== SEO Meta Tags ==================== -->
+    <meta name="description" content="Latest news, industry updates, company announcements, and logistics insights from Total Logistics Limited Bangladesh." />
+    <meta name="keywords" content="logistics news Bangladesh, Total Logistics updates, freight industry news, shipping news BD, supply chain updates, cargo news Dhaka" />
+    <meta name="author" content="Total Logistics Limited" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="News & Updates – Total Logistics Limited" />
+    <meta property="og:description" content="Stay updated with the latest news, achievements, and industry insights from Total Logistics Limited." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tll.com.bd/news" />
+    <meta property="og:image" content="https://tll.com.bd/image/android-chrome-512x512.png" />
+    <meta property="og:site_name" content="Total Logistics Limited" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="News & Updates – Total Logistics Limited" />
+    <meta name="twitter:description" content="Latest company news and logistics industry updates." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
+
+<style>
+  :root{--red:#ce2026;--red-dk:#8c0f13;--navy:#0a1628;--navy2:#0f2044;--gold:#f0a500;--white:#ffffff;--light:#f4f6fa;--mid:#8a95a8;--text:#1a2540;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+
+  /* ── HEADER ── */
+  header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,22,40,0.97);backdrop-filter:blur(12px);border-bottom:2px solid var(--red);transition:background .3s;}
+  .header-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;}
+  .logo img{height:58px;width:auto;display:block;}
+  nav ul{list-style:none;display:flex;gap:6px;align-items:center;}
+  nav a{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#d0d8ea;text-decoration:none;padding:8px 14px;border-radius:3px;position:relative;transition:color .25s;}
+  nav a::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--red);transform:scaleX(0);transition:transform .25s;transform-origin:center;}
+  nav a:hover{color:var(--white);}
+  nav a:hover::after,nav a.active::after{transform:scaleX(1);}
+  nav a.active{color:var(--white);}
+  .nav-cta{background:var(--red)!important;color:var(--white)!important;border-radius:4px!important;padding:8px 20px!important;}
+  .nav-cta::after{display:none!important;}
+  .nav-cta:hover{background:var(--red-dk)!important;}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+  .hamburger span{width:26px;height:2px;background:var(--white);border-radius:2px;display:block;transition:.3s;}
+
+  /* ── PAGE HERO ── */
+  .page-hero{
+    background:
+      linear-gradient(135deg,rgba(10,22,40,.95) 0%,rgba(140,15,19,.80) 100%),
+      url('https://tll.com.bd/wp-content/uploads/2025/02/rsz_613292_273065.png') center/cover no-repeat;
+    min-height:50vh;display:flex;align-items:flex-end;padding:160px 32px 80px;
+  }
+  .page-hero-inner{max-width:1320px;margin:0 auto;}
+  .breadcrumb{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s;}
+  .breadcrumb a:hover{color:var(--gold);}
+  .page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,100px);color:var(--white);line-height:.95;}
+  .page-hero p{font-size:18px;color:rgba(255,255,255,.65);margin-top:18px;max-width:560px;line-height:1.7;}
+
+  /* ── SECTIONS ── */
+  section{padding:100px 32px;}
+  .section-inner{max-width:1320px;margin:0 auto;}
+  .section-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block;}
+  .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,60px);line-height:1.05;color:var(--navy);}
+
+  /* ── FEATURED NEWS ── */
+  .featured{background:var(--light);}
+  .featured-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;margin-top:56px;}
+  .news-featured{background:var(--navy);border-radius:10px;overflow:hidden;position:relative;min-height:460px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .3s;}
+  .news-featured:hover{transform:translateY(-4px);}
+  .news-featured-img{position:absolute;inset:0;background:url('https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp') center/cover no-repeat;}
+  .news-featured-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,40,.96) 0%,rgba(10,22,40,.4) 60%,transparent 100%);}
+  .news-featured-body{position:relative;z-index:1;padding:36px;}
+  .news-cat{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:var(--red);color:var(--white);padding:4px 12px;border-radius:2px;margin-bottom:14px;}
+  .news-featured h2{font-family:'Bebas Neue',sans-serif;font-size:34px;color:var(--white);line-height:1.1;margin-bottom:12px;}
+  .news-featured p{font-size:15px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:18px;}
+  .news-meta{font-size:13px;color:rgba(255,255,255,.45);display:flex;gap:18px;align-items:center;}
+  .news-meta span{display:flex;align-items:center;gap:6px;}
+
+  .news-side{display:flex;flex-direction:column;gap:20px;}
+  .news-card-sm{background:var(--white);border-radius:8px;overflow:hidden;display:flex;gap:0;flex-direction:column;border:2px solid #e8edf4;transition:border-color .3s,box-shadow .3s,transform .3s;}
+  .news-card-sm:hover{border-color:var(--red);box-shadow:0 10px 36px rgba(206,32,38,.1);transform:translateY(-3px);}
+  .news-card-sm-img{height:150px;background:url('https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp') center/cover no-repeat;}
+  .news-card-sm:nth-child(2) .news-card-sm-img{background-image:url('https://tll.com.bd/wp-content/uploads/2025/02/633630_371284.webp');}
+  .news-card-sm-body{padding:22px 24px;}
+  .news-card-sm-body .news-cat{font-size:11px;}
+  .news-card-sm-body h3{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin:10px 0 8px;line-height:1.2;}
+  .news-card-sm-body p{font-size:14px;color:var(--mid);line-height:1.6;}
+  .news-card-sm-meta{font-size:12px;color:var(--mid);margin-top:12px;}
+
+  /* ── ALL NEWS GRID ── */
+  .all-news{background:var(--white);}
+  .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0 48px;}
+  .filter-btn{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border-radius:4px;border:2px solid #e8edf4;background:var(--white);color:var(--mid);cursor:pointer;transition:all .25s;}
+  .filter-btn:hover,.filter-btn.active{background:var(--red);border-color:var(--red);color:var(--white);}
+  .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .news-card{background:var(--white);border-radius:8px;overflow:hidden;border:2px solid #e8edf4;transition:border-color .3s,box-shadow .3s,transform .3s;display:flex;flex-direction:column;}
+  .news-card:hover{border-color:var(--red);box-shadow:0 12px 40px rgba(206,32,38,.1);transform:translateY(-4px);}
+  .news-card-img{height:200px;background:var(--light);overflow:hidden;position:relative;}
+  .news-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+  .news-card:hover .news-card-img img{transform:scale(1.05);}
+  .news-card-body{padding:28px 28px 24px;flex:1;display:flex;flex-direction:column;}
+  .news-card-body .news-cat{margin-bottom:12px;}
+  .news-card-body h3{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:12px;}
+  .news-card-body p{font-size:14px;color:var(--mid);line-height:1.7;flex:1;}
+  .news-card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px solid #e8edf4;}
+  .news-date{font-size:12px;color:var(--mid);}
+  .news-link{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--red);text-decoration:none;transition:letter-spacing .2s;}
+  .news-link:hover{letter-spacing:2px;}
+
+  /* ── NEWSLETTER ── */
+  .newsletter{background:var(--navy);padding:80px 32px;text-align:center;}
+  .newsletter h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,56px);color:var(--white);margin-bottom:16px;}
+  .newsletter p{font-size:17px;color:rgba(255,255,255,.6);max-width:520px;margin:0 auto 36px;}
+  .newsletter-form{display:flex;gap:12px;max-width:520px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+  .newsletter-form input{flex:1;min-width:260px;padding:16px 22px;border-radius:4px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:var(--white);font-family:'Barlow',sans-serif;font-size:15px;outline:none;transition:border-color .25s;}
+  .newsletter-form input::placeholder{color:rgba(255,255,255,.35);}
+  .newsletter-form input:focus{border-color:var(--red);}
+  .btn-red{background:var(--red);color:var(--white);border:none;padding:16px 36px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:4px;cursor:pointer;transition:background .25s;}
+  .btn-red:hover{background:var(--red-dk);}
+
+  /* ── FOOTER ── */
+  footer{background:#06101f;color:#8090ab;padding:60px 32px 32px;}
+  .footer-inner{max-width:1320px;margin:0 auto;}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:13px;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.08);}
+
+  /* ── REVEAL ── */
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:none;}
+  .reveal-delay-1{transition-delay:.1s;}
+  .reveal-delay-2{transition-delay:.2s;}
+  .reveal-delay-3{transition-delay:.3s;}
+  .reveal-delay-4{transition-delay:.4s;}
+  .reveal-delay-5{transition-delay:.5s;}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:900px){
+    nav ul{display:none;position:fixed;top:0;right:-320px;height:100vh;width:280px;background:var(--navy);flex-direction:column;align-items:flex-start;padding:100px 32px 40px;gap:4px;transition:right .35s;z-index:999;}
+    nav ul.open{right:0;display:flex;}
+    .hamburger{display:flex;}
+    .featured-grid{grid-template-columns:1fr;}
+    .news-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:600px){
+    .header-inner{padding:12px 20px;}
+    section{padding:70px 20px;}
+    .news-grid{grid-template-columns:1fr;}
+    .newsletter-form{flex-direction:column;}
+    .newsletter-form input{min-width:100%;}
+  }
+
+  
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* additional whatsapp styles */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="wp-content/uploads/2025/02/tll-logo.png" alt="Total Logistics Limited" onerror="this.style.display='none'"/>
+    </a>
+    <nav>
+      <ul id="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="project-logistics.html">Project Logistics</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; News</div>
+    <h1>News &<br/><span style="color:var(--red)">Updates</span></h1>
+    <p>Industry insights, company announcements, and logistics news from the TLL team.</p>
+  </div>
+</div>
+
+<!-- FEATURED NEWS -->
+<section class="featured">
+  <div class="section-inner">
+    <span class="section-label reveal">Latest from TLL</span>
+    <h2 class="section-title reveal reveal-delay-1">Top Stories</h2>
+    <div class="featured-grid">
+
+      <div class="news-featured reveal">
+        <div class="news-featured-img"></div>
+        <div class="news-featured-body">
+          <span class="news-cat">Company News</span>
+          <h2>TLL Expands Global Network with 12 New Agency Partners in 2025</h2>
+          <p>Total Logistics Limited has signed agency agreements with 12 new international freight partners across Southeast Asia, the Middle East, and Europe — strengthening our end-to-end global coverage.</p>
+          <div class="news-meta">
+            <span>📅 March 2025</span>
+            <span>✍️ TLL Editorial</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-side">
+        <div class="news-card-sm reveal reveal-delay-1">
+          <div class="news-card-sm-img"></div>
+          <div class="news-card-sm-body">
+            <span class="news-cat">Industry</span>
+            <h3>Bangladesh Customs Introduces New Digital Clearance Portal</h3>
+            <p>The National Board of Revenue has launched a streamlined e-customs platform to reduce clearance time significantly.</p>
+            <div class="news-card-sm-meta">📅 February 2025</div>
+          </div>
+        </div>
+        <div class="news-card-sm reveal reveal-delay-2">
+          <div class="news-card-sm-img"></div>
+          <div class="news-card-sm-body">
+            <span class="news-cat">Shipping</span>
+            <h3>Global Container Rates Stabilize After Two Years of Volatility</h3>
+            <p>Freight rate indices show consolidation as carrier capacity and demand find equilibrium in key trade lanes.</p>
+            <div class="news-card-sm-meta">📅 January 2025</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ALL NEWS -->
+<section class="all-news">
+  <div class="section-inner">
+    <span class="section-label reveal">All Articles</span>
+    <h2 class="section-title reveal reveal-delay-1">Browse by Category</h2>
+
+    <div class="filter-bar reveal reveal-delay-2">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Company News</button>
+      <button class="filter-btn">Industry Insights</button>
+      <button class="filter-btn">Shipping & Trade</button>
+      <button class="filter-btn">Regulations</button>
+    </div>
+
+    <div class="news-grid">
+
+      <div class="news-card reveal">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/21137_509155.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat">Company News</span>
+          <h3>TLL Achieves ISO Certification for Freight Operations</h3>
+          <p>Total Logistics Limited has successfully obtained ISO 9001:2015 certification, reinforcing our commitment to quality management and operational excellence across all service lines.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 March 15, 2025</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="news-card reveal reveal-delay-1">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/534966_420202.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp'"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat" style="background:#1a7a3c;">Industry Insights</span>
+          <h3>How Bangladesh's RMG Sector is Transforming Supply Chain Logistics</h3>
+          <p>The ready-made garments industry continues to drive innovation in freight management, pushing logistics providers to adopt faster, leaner models to meet global buyer demands.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 February 28, 2025</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="news-card reveal reveal-delay-2">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/633630_371284.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/633630_371284.webp'"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat" style="background:#0a6abf;">Shipping & Trade</span>
+          <h3>Red Sea Disruptions: What Bangladesh Exporters Need to Know in 2025</h3>
+          <p>Ongoing geopolitical tensions in the Red Sea corridor are affecting transit times and costs on Europe-bound shipments. Here's how TLL is navigating the situation for our clients.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 February 10, 2025</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="news-card reveal reveal-delay-3">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/21137_509155.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'" style="filter:hue-rotate(30deg)"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat" style="background:#7a4f00;">Regulations</span>
+          <h3>NBR Updates Import Duty Structure for Industrial Machinery in FY2025</h3>
+          <p>The National Board of Revenue has revised duty rates on several categories of industrial equipment. TLL's customs team breaks down the key changes and their impact on importers.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 January 22, 2025</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="news-card reveal reveal-delay-4">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/534966_420202.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp'" style="filter:saturate(1.3)"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat">Company News</span>
+          <h3>TLL Launches Dedicated Project Cargo Division for Heavy-Lift Operations</h3>
+          <p>Responding to growing demand from energy and infrastructure clients, TLL has established a specialized project cargo team equipped to handle OOG and heavy-lift shipments.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 January 5, 2025</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="news-card reveal reveal-delay-5">
+        <div class="news-card-img">
+          <img src="wp-content/uploads/2025/02/633630_371284.webp" alt="News" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/633630_371284.webp'" style="filter:brightness(1.1)"/>
+        </div>
+        <div class="news-card-body">
+          <span class="news-cat" style="background:#1a7a3c;">Industry Insights</span>
+          <h3>Chittagong Port Expansion: A Game-Changer for Bangladesh Trade</h3>
+          <p>The Bay Terminal project at Chittagong Port is set to dramatically increase cargo handling capacity, offering new opportunities for freight forwarders and importers alike.</p>
+          <!-- <div class="news-card-footer">
+            <span class="news-date">📅 December 18, 2024</span>
+            <a href="#" class="news-link">Read More →</a>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <h2 class="reveal">Stay Informed</h2>
+  <p class="reveal reveal-delay-1">Subscribe to TLL's monthly newsletter for freight market updates, regulatory changes, and company news.</p>
+  <div class="newsletter-form reveal reveal-delay-2">
+    <input type="email" placeholder="Enter your email address"/>
+    <button class="btn-red" onclick="this.textContent='Subscribed ✓';this.style.background='#1a7a3c';">Subscribe</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2025 Total Logistics Limited. All rights reserved.</span>
+      <a href="index.html" style="color:var(--red);text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger=document.getElementById('hamburger'),nav=document.getElementById('main-nav');
+  hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!nav.contains(e.target))nav.classList.remove('open');});
+  // Sticky
+  window.addEventListener('scroll',()=>{document.getElementById('site-header').style.background=window.scrollY>60?'rgba(6,16,31,0.98)':'rgba(10,22,40,0.97)';});
+  // Reveal
+  const reveals=document.querySelectorAll('.reveal');
+  new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.1}).observe&&reveals.forEach(el=>new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.1}).observe(el));
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});
+  });
+</script>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/8801959083615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+       alt="WhatsApp">
+</a>
+</body>
+</html>

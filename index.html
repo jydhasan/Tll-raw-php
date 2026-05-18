@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Total Logistics Ltd – Moving The World Forward</title>
+
+  <!-- ==================== FAVICONS ==================== -->
+  <!-- Basic Favicon -->
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+
+  <!-- Android Chrome Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="image/site.webmanifest">
+
+  <!-- ==================== SEO Meta Tags ==================== -->
+  <meta name="description" content="Total Logistics Ltd - Professional logistics and transportation company in Bangladesh. Reliable freight forwarding, supply chain, warehousing & global shipping solutions." />
+  <meta name="keywords" content="logistics company Bangladesh, freight forwarding Dhaka, cargo transportation, supply chain management, warehousing, shipping company BD, Total Logistics Ltd" />
+  <meta name="author" content="Total Logistics Ltd" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Total Logistics Ltd – Moving The World Forward" />
+  <meta property="og:description" content="Reliable logistics, freight forwarding & supply chain solutions in Bangladesh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image" content="https://yourwebsite.com/image/android-chrome-512x512.png" />
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+<!-- style.css -->
+ <link rel="stylesheet" href="style.css"/>
+<style>
+  :root {
+    --red:    #ce2026;
+    --red-dk: #8c0f13;
+    --navy:   #0a1628;
+    --navy2:  #0f2044;
+    --gold:   #f0a500;
+    --white:  #ffffff;
+    --light:  #f4f6fa;
+    --mid:    #8a95a8;
+    --text:   #1a2540;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    background: rgba(10,22,40,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--red);
+    transition: all .3s;
+  }
+  .header-inner {
+    max-width: 1320px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 32px;
+  }
+  .logo img { height: 58px; width: auto; display: block; }
+  nav ul { list-style: none; display: flex; gap: 6px; align-items: center; }
+  nav a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px; font-weight: 600; letter-spacing: 1.2px;
+    text-transform: uppercase; color: #d0d8ea;
+    text-decoration: none; padding: 8px 14px; border-radius: 3px;
+    position: relative; transition: color .25s;
+  }
+  nav a::after {
+    content: ''; position: absolute; bottom: 2px; left: 14px; right: 14px;
+    height: 2px; background: var(--red); transform: scaleX(0);
+    transition: transform .25s; transform-origin: center;
+  }
+  nav a:hover { color: var(--white); }
+  nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+  nav a.active { color: var(--white); }
+  .nav-cta {
+    background: var(--red) !important; color: var(--white) !important;
+    border-radius: 4px !important; padding: 8px 20px !important;
+  }
+  .nav-cta::after { display: none !important; }
+  .nav-cta:hover { background: var(--red-dk) !important; }
+
+  /* hamburger */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 26px; height: 2px; background: var(--white); border-radius: 2px; transition: .3s; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(135deg, rgba(10,22,40,.92) 0%, rgba(10,22,40,.75) 60%, rgba(206,32,38,.55) 100%),
+      url('https://tll.com.bd/wp-content/uploads/2025/02/rsz_613292_273065.png') center/cover no-repeat;
+    display: flex; align-items: center;
+    padding: 140px 32px 80px;
+  }
+  .hero-inner { max-width: 1320px; margin: 0 auto; width: 100%; }
+  .hero-tag {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid var(--gold); padding: 5px 16px; border-radius: 2px;
+    margin-bottom: 28px;
+    animation: fadeUp .7s ease both;
+  }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(60px, 9vw, 130px);
+    color: var(--white); line-height: .95;
+    letter-spacing: 2px;
+    animation: fadeUp .7s .15s ease both;
+  }
+  .hero h1 span { color: var(--red); }
+  .hero-sub {
+    max-width: 600px; margin-top: 28px;
+    font-size: 18px; color: #bcc8df; line-height: 1.7; font-weight: 300;
+    animation: fadeUp .7s .3s ease both;
+  }
+  .hero-btns {
+    display: flex; gap: 16px; flex-wrap: wrap; margin-top: 44px;
+    animation: fadeUp .7s .45s ease both;
+  }
+  .btn-primary {
+    background: var(--red); color: var(--white);
+    padding: 16px 40px; font-weight: 700; font-size: 15px;
+    letter-spacing: 1px; text-transform: uppercase; text-decoration: none;
+    border-radius: 4px; transition: background .25s, transform .2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--red-dk); transform: translateY(-2px); }
+  .btn-outline {
+    border: 2px solid rgba(255,255,255,.4); color: var(--white);
+    padding: 14px 38px; font-weight: 600; font-size: 15px;
+    letter-spacing: 1px; text-transform: uppercase; text-decoration: none;
+    border-radius: 4px; transition: border-color .25s, background .25s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
+
+  /* hero stats */
+  .hero-stats {
+    display: flex; gap: 48px; flex-wrap: wrap; margin-top: 80px;
+    border-top: 1px solid rgba(255,255,255,.12); padding-top: 40px;
+    animation: fadeUp .7s .6s ease both;
+  }
+  .stat-item { text-align: left; }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px; line-height: 1; color: var(--white);
+  }
+  .stat-num span { color: var(--gold); }
+  .stat-label { font-size: 13px; color: var(--mid); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 4px; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 100px 32px; }
+  .section-inner { max-width: 1320px; margin: 0 auto; }
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--red);
+    margin-bottom: 14px; display: block;
+  }
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(38px, 5vw, 62px); line-height: 1.05;
+    color: var(--navy);
+  }
+  .section-title.light { color: var(--white); }
+
+  /* ── MARQUEE TICKER ── */
+  .ticker {
+    background: var(--red);
+    overflow: hidden; padding: 14px 0;
+  }
+  .ticker-track {
+    display: flex; width: max-content;
+    animation: ticker 30s linear infinite;
+  }
+  .ticker-track span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--white);
+    padding: 0 40px; white-space: nowrap;
+  }
+  .ticker-track span.dot { color: var(--gold); padding: 0; }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ── SERVICES ── */
+  .services { background: var(--navy); }
+  .services .section-title { color: var(--white); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px; margin-top: 60px;
+  }
+  .svc-card {
+    background: var(--navy2);
+    padding: 48px 36px 44px;
+    position: relative; overflow: hidden;
+    transition: background .3s;
+    border-top: 3px solid transparent;
+  }
+  .svc-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--red);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .35s;
+  }
+  .svc-card:hover { background: #162044; }
+  .svc-card:hover::before { transform: scaleX(1); }
+  .svc-icon {
+    font-size: 42px; margin-bottom: 22px; display: block;
+    filter: grayscale(30%);
+  }
+  .svc-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px; color: rgba(255,255,255,.04);
+    position: absolute; top: 10px; right: 20px; line-height: 1;
+    pointer-events: none;
+  }
+  .svc-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--white);
+    margin-bottom: 14px;
+  }
+  .svc-card p { font-size: 15px; color: var(--mid); line-height: 1.7; }
+
+  /* ── ABOUT ── */
+  .about { background: var(--light); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center; margin-top: 60px;
+  }
+  .about-img-wrap { position: relative; }
+  .about-img-wrap img {
+    width: 100%; border-radius: 6px;
+    display: block; box-shadow: 20px 20px 60px rgba(10,22,40,.18);
+  }
+  .about-badge {
+    position: absolute; bottom: -30px; right: -30px;
+    background: var(--red); color: var(--white);
+    padding: 28px 32px; border-radius: 4px; text-align: center;
+    box-shadow: 0 10px 40px rgba(206,32,38,.35);
+  }
+  .about-badge strong {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px; display: block; line-height: 1;
+  }
+  .about-badge span { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; opacity: .9; }
+  .about-text p { font-size: 17px; color: #445; line-height: 1.8; margin-bottom: 20px; }
+  .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+  .feat-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    background: var(--white); padding: 18px 20px; border-radius: 6px;
+    border-left: 3px solid var(--red);
+  }
+  .feat-icon { font-size: 22px; flex-shrink: 0; }
+  .feat-item h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+  .feat-item p { font-size: 13px; color: var(--mid); }
+
+  /* ── WHY US ── */
+  .why { background: var(--white); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 24px; margin-top: 60px;
+  }
+  .why-card {
+    text-align: center; padding: 44px 24px;
+    border: 2px solid #e8edf4; border-radius: 8px;
+    transition: border-color .3s, box-shadow .3s, transform .3s;
+    position: relative; overflow: hidden;
+  }
+  .why-card::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(206,32,38,.03), rgba(10,22,40,.03));
+    opacity: 0; transition: opacity .3s;
+  }
+  .why-card:hover { border-color: var(--red); box-shadow: 0 16px 48px rgba(206,32,38,.12); transform: translateY(-4px); }
+  .why-card:hover::after { opacity: 1; }
+  .why-icon { font-size: 40px; margin-bottom: 20px; }
+  .why-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 10px; color: var(--navy); }
+  .why-card p { font-size: 14px; color: var(--mid); line-height: 1.7; }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    background:
+      linear-gradient(90deg, var(--navy) 0%, var(--red-dk) 50%, var(--red) 100%);
+    padding: 80px 32px; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-band::before {
+    content: 'TLL'; font-family: 'Bebas Neue', sans-serif;
+    font-size: 300px; color: rgba(255,255,255,.03);
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); pointer-events: none;
+    white-space: nowrap;
+  }
+  .cta-band h2 {
+    font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px,5vw,58px);
+    color: var(--white); margin-bottom: 20px; position: relative;
+  }
+  .cta-band p { font-size: 18px; color: rgba(255,255,255,.75); max-width: 600px; margin: 0 auto 40px; position: relative; }
+
+  /* ── FOOTER ── */
+  footer { background: #06101f; color: #8090ab; padding: 80px 32px 32px; }
+  .footer-inner { max-width: 1320px; margin: 0 auto; }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px; padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .footer-brand img { height: 52px; margin-bottom: 20px; }
+  .footer-brand p { font-size: 14px; line-height: 1.8; color: #607090; }
+  .footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--white);
+    margin-bottom: 20px; border-bottom: 1px solid var(--red);
+    padding-bottom: 10px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: #607090; text-decoration: none; font-size: 14px; transition: color .25s; }
+  .footer-col ul li a:hover { color: var(--white); }
+  .footer-col address { font-style: normal; font-size: 14px; line-height: 1.9; color: #607090; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 28px; font-size: 13px; flex-wrap: wrap; gap: 12px;
+  }
+  .footer-bottom a { color: var(--red); text-decoration: none; }
+
+  /* social */
+  .social-links { display: flex; gap: 12px; margin-top: 24px; }
+  .social-links a {
+    width: 38px; height: 38px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.15);
+    display: flex; align-items: center; justify-content: center;
+    color: #607090; text-decoration: none; font-size: 16px;
+    transition: border-color .25s, color .25s, background .25s;
+  }
+  .social-links a:hover { border-color: var(--red); color: var(--white); background: var(--red); }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    nav ul { display: none; position: fixed; top: 0; right: -320px; height: 100vh; width: 280px; background: var(--navy); flex-direction: column; align-items: flex-start; padding: 100px 32px 40px; gap: 4px; transition: right .35s; z-index: 999; }
+    nav ul.open { right: 0; display: flex; }
+    nav a { font-size: 18px; padding: 12px 0; }
+    .hamburger { display: flex; }
+    .about-grid { grid-template-columns: 1fr; gap: 60px; }
+    .about-badge { bottom: -20px; right: 16px; }
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .hero-stats { gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .about-features { grid-template-columns: 1fr; }
+    .header-inner { padding: 12px 20px; }
+    section { padding: 70px 20px; }
+    .hero { padding: 120px 20px 60px; }
+  }
+
+  /* scroll reveal */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+  .reveal-delay-4 { transition-delay: .4s; }
+
+
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* additional whatsapp styles */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+/* Map Styles */
+
+    /* ============ MAP ============ */
+    /* Map container - parent div */
+.map-container {
+  display: flex;
+  flex-direction: row;
+  /* gap: 24px; */
+}
+
+.map-section {
+  flex: 1;
+  min-width: 280px;
+  height: 350px;
+  background: var(--light);
+  position: relative;
+  overflow: hidden;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(0.3);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid var(--accent);
+}
+
+.map-overlay h4 {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.map-overlay p {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 2px;
+}
+
+/* Mobile: stack */
+@media (max-width: 600px) {
+  .map-container {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="./wp-content/uploads/2025/02/tll-logo.png" alt="Total Logistics Limited" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span style="display:none;font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;letter-spacing:3px;">TLL</span>
+    </a>
+    <nav>
+      <ul id="main-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="project-logistics.html">Project Logistics</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Bangladesh's Trusted Logistics Partner</div>
+    <h1>Moving <span>Cargo.</span><br/>Connecting<br/>Worlds.</h1>
+    <p class="hero-sub">Total Logistics Limited delivers end-to-end freight solutions — from NVOCC shipping and customs clearance to project logistics — across every ocean and border.</p>
+    <div class="hero-btns">
+      <a href="services.html" class="btn-primary">Explore Services</a>
+      <a href="contact.html" class="btn-outline">Get a Quote</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50<span>+</span></div>
+        <div class="stat-label">Global Partners</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5<span>K+</span></div>
+        <div class="stat-label">Shipments Handled</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">24<span>/7</span></div>
+        <div class="stat-label">Support Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker">
+    <span>NVOCC Shipping</span><span class="dot">✦</span>
+    <span>Customs Clearance</span><span class="dot">✦</span>
+    <span>Freight Forwarding</span><span class="dot">✦</span>
+    <span>Project Logistics</span><span class="dot">✦</span>
+    <span>Air Freight</span><span class="dot">✦</span>
+    <span>Sea Freight</span><span class="dot">✦</span>
+    <span>Land Transport</span><span class="dot">✦</span>
+    <span>Warehousing</span><span class="dot">✦</span>
+    <span>NVOCC Shipping</span><span class="dot">✦</span>
+    <span>Customs Clearance</span><span class="dot">✦</span>
+    <span>Freight Forwarding</span><span class="dot">✦</span>
+    <span>Project Logistics</span><span class="dot">✦</span>
+    <span>Air Freight</span><span class="dot">✦</span>
+    <span>Sea Freight</span><span class="dot">✦</span>
+    <span>Land Transport</span><span class="dot">✦</span>
+    <span>Warehousing</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="section-inner">
+    <span class="section-label reveal">What We Do</span>
+    <h2 class="section-title light reveal reveal-delay-1">End-to-End Logistics<br/>Solutions</h2>
+    <div class="services-grid">
+
+      <div class="svc-card reveal">
+        <span class="svc-num">01</span>
+        <span class="svc-icon">🚢</span>
+        <h3>NVOCC Shipping</h3>
+        <p>As a Non-Vessel Operating Common Carrier, we manage your cargo without owning the vessels — offering flexible, cost-effective shipping solutions across global trade lanes.</p>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-1">
+        <span class="svc-num">02</span>
+        <span class="svc-icon">🛃</span>
+        <h3>Customs Clearance</h3>
+        <p>Navigating customs regulations can be complex. We ensure compliance with all local and international laws, reducing delays and avoiding penalties on every shipment.</p>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-2">
+        <span class="svc-num">03</span>
+        <span class="svc-icon">✈️</span>
+        <h3>Air Freight</h3>
+        <p>Time-critical cargo demands speed. Our air freight service connects Bangladesh to every major hub worldwide with door-to-door tracking and competitive rates.</p>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-3">
+        <span class="svc-num">04</span>
+        <span class="svc-icon">🏗️</span>
+        <h3>Project Logistics</h3>
+        <p>Heavy-lift, over-dimensional, and complex cargo — our specialized project logistics team handles engineering, route surveys, and execution from port to site.</p>
+      </div>
+
+      <div class="svc-card reveal">
+        <span class="svc-num">05</span>
+        <span class="svc-icon">🚛</span>
+        <h3>Land Transport</h3>
+        <p>Seamless inland connectivity across Bangladesh and regional routes, with a fleet optimized for both industrial and commercial freight requirements.</p>
+      </div>
+
+      <div class="svc-card reveal reveal-delay-1">
+        <span class="svc-num">06</span>
+        <span class="svc-icon">🏭</span>
+        <h3>Warehousing</h3>
+        <p>Secure, climate-controlled warehousing with inventory management, order fulfillment, and distribution services strategically located near major ports.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp" alt="Total Logistics operations" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'"/>
+        <div class="about-badge">
+          <strong>10<span style="color:#ffd080">+</span></strong>
+          <span>Years of<br/>Excellence</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">Who We Are</span>
+        <h2 class="section-title reveal reveal-delay-1">Bangladesh's Premier<br/>Logistics Company</h2>
+        <p class="reveal reveal-delay-2" style="margin-top:24px;">Total Logistics Limited (TLL) is a full-service logistics and freight forwarding company headquartered in Dhaka, Bangladesh. We are committed to delivering reliable, transparent, and innovative logistics solutions to businesses of all sizes.</p>
+        <p class="reveal reveal-delay-2">From a single container to complex project cargo, our team of seasoned professionals ensures your goods move safely, swiftly, and cost-efficiently across the globe.</p>
+        <div class="about-features reveal reveal-delay-3">
+          <div class="feat-item">
+            <span class="feat-icon">🌐</span>
+            <div>
+              <h4>Global Network</h4>
+              <p>Partners in 50+ countries</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">📦</span>
+            <div>
+              <h4>Full Coverage</h4>
+              <p>Air, sea, road & rail</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">⏱️</span>
+            <div>
+              <h4>On-Time Delivery</h4>
+              <p>98% on-time rate</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <span class="feat-icon">🔒</span>
+            <div>
+              <h4>Compliance</h4>
+              <p>Licensed & certified</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-4" style="margin-top:36px;">
+          <a href="about.html" class="btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <div class="section-inner">
+    <div style="text-align:center; max-width:700px; margin:0 auto;">
+      <span class="section-label reveal">Why Choose TLL</span>
+      <h2 class="section-title reveal reveal-delay-1">We Deliver More Than Cargo.<br/>We Deliver Trust.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🏆</div>
+        <h3>Proven Track Record</h3>
+        <p>Over a decade of successful shipments across diverse industries — from garments to industrial machinery.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">💡</div>
+        <h3>Smart Solutions</h3>
+        <p>Technology-driven logistics with real-time tracking, digital documentation, and proactive communication.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">🤝</div>
+        <h3>Dedicated Support</h3>
+        <p>A personal account manager and 24/7 support team ready to handle any situation — before, during, and after delivery.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon">💰</div>
+        <h3>Competitive Pricing</h3>
+        <p>Transparent, all-inclusive quotes with no hidden fees. We optimize routes to maximize value for every budget.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 1. OUR TRUSTED PARTNERS -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:60px;">
+        <span class="section-tag">Our Network</span>
+        <h2 class="section-title">Our Trusted Partners</h2>
+      </div>
+      <div class="partners-marquee-wrap">
+        <div class="partners-track">
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/alz.webp" alt="ALZ"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/Cross-world.webp" alt="Cross World"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/grand-park.webp" alt="Grand Park"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/linkin.webp" alt="Linkin"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/micromax.webp" alt="Micromax"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/north-star.webp" alt="North Star"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/regent.webp" alt="Regent"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/sanargaon.webp" alt="Sanargaon"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/vip-trading.webp" alt="VIP Trading"></div>
+          
+          <!-- Duplicate for seamless loop -->
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/alz.webp" alt="ALZ"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/Cross-world.webp" alt="Cross World"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/grand-park.webp" alt="Grand Park"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/linkin.webp" alt="Linkin"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/micromax.webp" alt="Micromax"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/north-star.webp" alt="North Star"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/regent.webp" alt="Regent"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/sanargaon.webp" alt="Sanargaon"></div>
+          <div class="partner-card"><img class="partner-logo-img" src="trusted-partners/vip-trading.webp" alt="VIP Trading"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MEET OUR TEAM -->
+  <section class="section" style="background:var(--light);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:60px;">
+        <span class="section-tag">Our People</span>
+        <h2 class="section-title">Meet Our Team</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo"><img src="./team-member-pic/chairman.PNG" alt="Chairman"></div>
+          <div class="team-info">
+            <div class="team-name">Mahmud Hossain</div>
+            <div class="team-role">Chairman (FCA)</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="./team-member-pic/director.png" alt="MD"></div>
+          <div class="team-info">
+            <div class="team-name">Mohammad Shahadat Hossain</div>
+            <div class="team-role">Managing Director</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="./team-member-pic/executive-imran.png" alt="Syed Imran"></div>
+          <div class="team-info">
+            <div class="team-name">Syed Imran Hossain</div>
+            <div class="team-role">Head of Department</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="./team-member-pic/sowad.png" alt="Abu Sowad"></div>
+          <div class="team-info">
+            <div class="team-name">Abu Sowad</div>
+            <div class="team-role">Head of Business Development</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="./team-member-pic/lutful.png" alt="Lutful Hoque"></div>
+          <div class="team-info">
+            <div class="team-name">Lutful Hoque</div>
+            <div class="team-role">Head of Customs</div>
+          </div>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PERFORMANCE CERTIFICATES -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:50px;">
+        <span class="section-tag">Our Achievements</span>
+        <h2 class="section-title">PERFORMANCE CERTIFICATES</h2>
+      </div>
+      <div class="masonry-grid">
+        <div class="masonry-item"><img src="./Certificates/c1.PNG" alt="Certificate 1"></div>
+        <div class="masonry-item"><img src="./Certificates/c2.PNG" alt="Certificate 2"></div>
+        <div class="masonry-item"><img src="./Certificates/c3.PNG" alt="Certificate 3"></div>
+        <div class="masonry-item"><img src="./Certificates/c4.PNG" alt="Certificate 4"></div>
+        <div class="masonry-item"><img src="./Certificates/c5.PNG" alt="Certificate 5"></div>
+        <div class="masonry-item"><img src="./Certificates/c6.PNG" alt="Certificate 6"></div>
+        <div class="masonry-item"><img src="./Certificates/c7.PNG" alt="Certificate 7"></div>
+        <div class="masonry-item"><img src="./Certificates/c8.PNG" alt="Certificate 8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COMPLIANCE & CODE OF CONDUCT -->
+  <section class="section" style="background:var(--light);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:60px;">
+        <span class="section-tag">Integrity First</span>
+        <h2 class="section-title">Compliance &amp; Code of Conduct</h2>
+      </div>
+
+      <div class="compliance-card">
+        <h3 style="margin-bottom:16px;">Guiding Principles</h3>
+        <p>We align our operations with the highest legal and ethical standards of Bangladesh and international best practices.</p>
+      </div>
+
+      <div class="conduct-grid">
+        <div class="conduct-item"><strong>Laws &amp; Ethical Standards</strong><br>Full compliance with all applicable laws.</div>
+        <div class="conduct-item"><strong>Zero Tolerance</strong><br>Forced labor, child labor, and discrimination.</div>
+        <div class="conduct-item"><strong>Anti-Bribery</strong><br>Strict prohibition of corrupt practices.</div>
+        <div class="conduct-item"><strong>Confidentiality</strong><br>Protection of client data and business information.</div>
+        <div class="conduct-item"><strong>Environment</strong><br>Commitment to sustainable and green logistics.</div>
+        <div class="conduct-item"><strong>Health &amp; Safety</strong><br>Safe working environment for all employees.</div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2 class="reveal">Ready to Ship With Confidence?</h2>
+  <p class="reveal reveal-delay-1">Talk to our logistics experts today. Get a customized quote and discover how TLL can streamline your supply chain.</p>
+  <div class="reveal reveal-delay-2" style="position:relative;">
+    <a href="contact.html" class="btn-primary" style="font-size:17px;padding:18px 52px;">Get a Free Quote</a>
+  </div>
+</div>
+
+  <!-- MAP -->
+<div class="map-container">
+    <div class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577.4093205593182!2d90.40444466822873!3d23.79176247539718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a5b5416b87%3A0xc56b00cc6d74002!2sComprehensive%20DebonAir!5e0!3m2!1sen!2sbd!4v1779068932535!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <div class="map-overlay">
+      <h4><i class="fas fa-building" style="color:var(--blue2);margin-right:6px"></i> Total Logistics Ltd</h4>
+      <p>BANANI, DHAKA -1213</p>
+    </div> -->
+  </div>
+  <div class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d644.5683733708847!2d91.8122686126551!3d22.32125374494723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b86e323e1f%3A0x3bd8eaa62e1d01d7!2sShahjadi%20Chamber!5e0!3m2!1sen!2sbd!4v1779068263338!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <div class="map-overlay">
+      <h4><i class="fas fa-building" style="color:var(--blue2);margin-right:6px"></i> Total Logistics Ltd</h4>
+      <p>AGRABAD, CHITTAGONG -4100</p>
+    </div> -->
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="./wp-content/uploads/2025/02/tll-logo.png" alt="TLL" onerror="this.style.display='none'"/>
+        <p>Total Logistics Limited is Bangladesh's trusted partner for end-to-end freight forwarding, customs clearance, and project logistics solutions.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">NVOCC Shipping</a></li>
+          <li><a href="services.html">Customs Clearance</a></li>
+          <li><a href="services.html">Air Freight</a></li>
+          <li><a href="services.html">Sea Freight</a></li>
+          <li><a href="project-logistics.html">Project Logistics</a></li>
+          <li><a href="services.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- admin login -->
+          <li><a href="admin_login.php">Admin Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Dhaka, Bangladesh<br/><br/>
+          <a href="mailto:info@tll.com.bd" style="color:#607090;text-decoration:none;">info@tll.com.bd</a><br/><br/>
+          <a href="https://tll.com.bd" style="color:#607090;text-decoration:none;">www.tll.com.bd</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Total Logistics Limited. All rights reserved.</span>
+      <span>Designed for excellence in global freight</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => { nav.classList.toggle('open'); });
+  document.addEventListener('click', e => {
+    if (!hamburger.contains(e.target) && !nav.contains(e.target)) nav.classList.remove('open');
+  });
+
+  // Sticky header shrink
+  window.addEventListener('scroll', () => {
+    const h = document.getElementById('site-header');
+    if (window.scrollY > 60) { h.style.background = 'rgba(6,16,31,0.98)'; }
+    else { h.style.background = 'rgba(10,22,40,0.96)'; }
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/8801959083615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+       alt="WhatsApp">
+</a>
+</body>
+</html>

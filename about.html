@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title -->
+    <title>About Us – Total Logistics Limited</title>
+
+    <!-- ==================== FAVICONS ==================== -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+    
+    <!-- Apple & Android Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="image/site.webmanifest" />
+
+    <!-- ==================== SEO Meta Tags ==================== -->
+    <meta name="description" content="Learn about Total Logistics Limited - A leading logistics and transportation company in Bangladesh with years of experience in freight forwarding, supply chain management, and global shipping solutions." />
+    <meta name="keywords" content="About Total Logistics, logistics company Bangladesh, freight forwarding Dhaka, supply chain management BD, transportation company, cargo shipping Bangladesh" />
+    <meta name="author" content="Total Logistics Limited" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:title" content="About Us – Total Logistics Limited" />
+    <meta property="og:description" content="Discover the story, vision, and values behind Total Logistics Limited - Your trusted logistics partner in Bangladesh." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tll.com.bd/about-us" />
+    <meta property="og:image" content="https://tll.com.bd/image/android-chrome-512x512.png" />
+    <meta property="og:site_name" content="Total Logistics Limited" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us – Total Logistics Limited" />
+    <meta name="twitter:description" content="Learn about our journey, mission and team." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{--red:#ce2026;--red-dk:#8c0f13;--navy:#0a1628;--navy2:#0f2044;--gold:#f0a500;--white:#ffffff;--light:#f4f6fa;--mid:#8a95a8;--text:#1a2540;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+  header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,22,40,0.97);backdrop-filter:blur(12px);border-bottom:2px solid var(--red);transition:all .3s;}
+  .header-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;}
+  .logo img{height:58px;width:auto;display:block;}
+  nav ul{list-style:none;display:flex;gap:6px;align-items:center;}
+  nav a{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#d0d8ea;text-decoration:none;padding:8px 14px;border-radius:3px;position:relative;transition:color .25s;}
+  nav a::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--red);transform:scaleX(0);transition:transform .25s;transform-origin:center;}
+  nav a:hover{color:var(--white);}
+  nav a:hover::after,nav a.active::after{transform:scaleX(1);}
+  nav a.active{color:var(--white);}
+  .nav-cta{background:var(--red)!important;color:var(--white)!important;border-radius:4px!important;padding:8px 20px!important;}
+  .nav-cta::after{display:none!important;}
+  .nav-cta:hover{background:var(--red-dk)!important;}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .hamburger span{width:26px;height:2px;background:var(--white);border-radius:2px;}
+
+  /* PAGE HERO */
+  .page-hero{
+    background:linear-gradient(135deg,rgba(10,22,40,.96) 0%,rgba(140,15,19,.8) 100%),
+    url('https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp') center/cover no-repeat;
+    min-height:55vh;display:flex;align-items:flex-end;padding:160px 32px 80px;
+  }
+  .page-hero-inner{max-width:1320px;margin:0 auto;}
+  .breadcrumb{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold);}
+  .page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,100px);color:var(--white);line-height:.95;}
+
+  section{padding:100px 32px;}
+  .section-inner{max-width:1320px;margin:0 auto;}
+  .section-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block;}
+  .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,62px);line-height:1.05;color:var(--navy);}
+
+  /* MISSION */
+  .mission{background:var(--light);}
+  .mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px;}
+  .mission-text p{font-size:17px;color:#445;line-height:1.8;margin-bottom:20px;}
+  .mission-img img{width:100%;border-radius:6px;box-shadow:20px 20px 60px rgba(10,22,40,.15);}
+
+  /* VALUES */
+  .values{background:var(--navy);}
+  .values .section-title{color:var(--white);}
+  .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;}
+  .val-card{background:var(--navy2);padding:44px 36px;border-top:3px solid var(--red);border-radius:2px;}
+  .val-card h3{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;text-transform:uppercase;color:var(--white);margin:16px 0 12px;}
+  .val-card p{font-size:15px;color:var(--mid);line-height:1.7;}
+  .val-icon{font-size:40px;}
+
+  /* TEAM */
+  .team{background:var(--white);}
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px;}
+  .team-card{text-align:center;padding:36px 20px;border:2px solid #e8edf4;border-radius:8px;transition:border-color .3s,box-shadow .3s;}
+  .team-card:hover{border-color:var(--red);box-shadow:0 12px 40px rgba(206,32,38,.1);}
+  .team-avatar{width:90px;height:90px;background:linear-gradient(135deg,var(--red),var(--navy));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--white);}
+  .team-card h4{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;margin-bottom:6px;}
+  .team-card span{font-size:13px;color:var(--red);letter-spacing:1px;text-transform:uppercase;font-weight:600;}
+
+  footer{background:#06101f;color:#8090ab;padding:60px 32px 32px;}
+  .footer-inner{max-width:1320px;margin:0 auto;}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:13px;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.08);}
+
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:none;}
+  .reveal-delay-1{transition-delay:.1s;}
+  .reveal-delay-2{transition-delay:.2s;}
+  .reveal-delay-3{transition-delay:.3s;}
+
+  @media(max-width:900px){
+    nav ul{display:none;position:fixed;top:0;right:-320px;height:100vh;width:280px;background:var(--navy);flex-direction:column;align-items:flex-start;padding:100px 32px 40px;gap:4px;transition:right .35s;z-index:999;}
+    nav ul.open{right:0;display:flex;}
+    .hamburger{display:flex;}
+    .mission-grid{grid-template-columns:1fr;gap:40px;}
+    .values-grid{grid-template-columns:1fr 1fr;}
+    .team-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:600px){
+    .values-grid{grid-template-columns:1fr;}
+    .team-grid{grid-template-columns:1fr 1fr;}
+    .header-inner{padding:12px 20px;}
+    section{padding:70px 20px;}
+  }
+
+  
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* additional whatsapp styles */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="./wp-content/uploads/2025/02/tll-logo.png" alt="TLL" onerror="this.style.display='none'"/></a>
+    <nav><ul id="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="project-logistics.html">Project Logistics</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul></nav>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About Us</div>
+    <h1>About<br/><span style="color:var(--red)">Total Logistics</span><br/>Limited</h1>
+  </div>
+</div>
+
+<section class="mission">
+  <div class="section-inner">
+    <div class="mission-grid">
+      <div class="mission-text">
+        <span class="section-label reveal">Our Story</span>
+        <h2 class="section-title reveal reveal-delay-1">A Legacy of Moving the World Forward</h2>
+        <p class="reveal reveal-delay-2" style="margin-top:24px;">Total Logistics Limited (TLL) was founded with a singular purpose: to make global trade simpler, faster, and more reliable for Bangladeshi businesses. Over the past decade, we have grown from a local freight forwarder into a full-service international logistics company trusted by hundreds of clients.</p>
+        <p class="reveal reveal-delay-2">Our team brings together decades of combined experience in customs, freight, project logistics, and supply chain management. We understand that every shipment matters — whether it's a single pallet or a full vessel charter.</p>
+        <p class="reveal reveal-delay-2">Licensed by all relevant Bangladesh authorities and certified by international freight associations, TLL operates with the highest standards of compliance, transparency, and professionalism.</p>
+      </div>
+      <div class="mission-img reveal reveal-delay-3">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp" alt="TLL Operations" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="section-inner">
+    <div style="text-align:center;max-width:700px;margin:0 auto;">
+      <span class="section-label reveal">What Drives Us</span>
+      <h2 class="section-title reveal reveal-delay-1">Our Core Values</h2>
+    </div>
+    <div class="values-grid">
+      <div class="val-card reveal">
+        <div class="val-icon">🎯</div>
+        <h3>Reliability</h3>
+        <p>We deliver on our promises — every shipment, every time. Reliability isn't just our goal; it's our reputation.</p>
+      </div>
+      <div class="val-card reveal reveal-delay-1">
+        <div class="val-icon">🌍</div>
+        <h3>Global Reach</h3>
+        <p>With partners in over 50 countries, we bring a worldwide network and local expertise to every logistics challenge.</p>
+      </div>
+      <div class="val-card reveal reveal-delay-2">
+        <div class="val-icon">💎</div>
+        <h3>Integrity</h3>
+        <p>Transparent pricing, honest communication, and ethical business practices — always, without compromise.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">⚡</div>
+        <h3>Agility</h3>
+        <p>Markets change, regulations shift, and emergencies happen. Our team responds swiftly to keep your cargo moving.</p>
+      </div>
+      <div class="val-card reveal reveal-delay-1">
+        <div class="val-icon">🔬</div>
+        <h3>Innovation</h3>
+        <p>We leverage technology to give clients real-time visibility, digital documentation, and smarter route planning.</p>
+      </div>
+      <div class="val-card reveal reveal-delay-2">
+        <div class="val-icon">🤝</div>
+        <h3>Partnership</h3>
+        <p>We don't just handle shipments — we build long-term partnerships based on trust and mutual growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="section-inner">
+    <div style="text-align:center;max-width:700px;margin:0 auto;">
+      <span class="section-label reveal">The People Behind TLL</span>
+      <h2 class="section-title reveal reveal-delay-1">Our Leadership Team</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-avatar">MD</div>
+        <h4>Managing Director</h4>
+        <span>Leadership</span>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar">OD</div>
+        <h4>Operations Director</h4>
+        <span>Operations</span>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar">CC</div>
+        <h4>Customs Chief</h4>
+        <span>Compliance</span>
+      </div>
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-avatar">BD</div>
+        <h4>Business Development</h4>
+        <span>Growth</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2025 Total Logistics Limited. All rights reserved.</span>
+      <a href="index.html" style="color:var(--red);text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger=document.getElementById('hamburger'),nav=document.getElementById('main-nav');
+  hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!nav.contains(e.target))nav.classList.remove('open');});
+  const reveals=document.querySelectorAll('.reveal');
+  const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.12});
+  reveals.forEach(el=>observer.observe(el));
+</script>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/8801959083615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+       alt="WhatsApp">
+</a>
+</body>
+</html>

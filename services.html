@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title -->
+    <title>Services – Total Logistics Limited</title>
+
+    <!-- ==================== FAVICONS ==================== -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
+    
+    <!-- Apple & Android Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="image/site.webmanifest" />
+
+    <!-- ==================== SEO Meta Tags ==================== -->
+    <meta name="description" content="Total Logistics Limited offers comprehensive logistics services in Bangladesh including freight forwarding, sea & air cargo, warehousing, supply chain management, project logistics, and customs clearance." />
+    <meta name="keywords" content="logistics services Bangladesh, freight forwarding, sea freight, air cargo, warehousing, supply chain management, project logistics, customs clearance, transportation services Dhaka, Total Logistics" />
+    <meta name="author" content="Total Logistics Limited" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Services – Total Logistics Limited" />
+    <meta property="og:description" content="Comprehensive logistics solutions including freight forwarding, cargo, warehousing, project logistics and supply chain management." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tll.com.bd/services" />
+    <meta property="og:image" content="https://tll.com.bd/image/android-chrome-512x512.png" />
+    <meta property="og:site_name" content="Total Logistics Limited" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Services – Total Logistics Limited" />
+    <meta name="twitter:description" content="Our full range of professional logistics and transportation services." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
+
+<style>
+  :root{--red:#ce2026;--red-dk:#8c0f13;--navy:#0a1628;--navy2:#0f2044;--gold:#f0a500;--white:#ffffff;--light:#f4f6fa;--mid:#8a95a8;--text:#1a2540;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+  header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(10,22,40,0.97);backdrop-filter:blur(12px);border-bottom:2px solid var(--red);}
+  .header-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;}
+  .logo img{height:58px;width:auto;display:block;}
+  nav ul{list-style:none;display:flex;gap:6px;align-items:center;}
+  nav a{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#d0d8ea;text-decoration:none;padding:8px 14px;border-radius:3px;position:relative;transition:color .25s;}
+  nav a::after{content:'';position:absolute;bottom:2px;left:14px;right:14px;height:2px;background:var(--red);transform:scaleX(0);transition:transform .25s;transform-origin:center;}
+  nav a:hover{color:var(--white);}
+  nav a:hover::after,nav a.active::after{transform:scaleX(1);}
+  nav a.active{color:var(--white);}
+  .nav-cta{background:var(--red)!important;color:var(--white)!important;border-radius:4px!important;padding:8px 20px!important;}
+  .nav-cta::after{display:none!important;}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .hamburger span{width:26px;height:2px;background:var(--white);border-radius:2px;}
+
+  .page-hero{background:linear-gradient(135deg,rgba(10,22,40,.97),rgba(140,15,19,.85)),url('https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp') center/cover no-repeat;min-height:50vh;display:flex;align-items:flex-end;padding:160px 32px 80px;}
+  .page-hero-inner{max-width:1320px;margin:0 auto;}
+  .breadcrumb{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none;}
+  .page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,100px);color:var(--white);line-height:.95;}
+
+  section{padding:100px 32px;}
+  .section-inner{max-width:1320px;margin:0 auto;}
+  .section-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block;}
+  .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,62px);line-height:1.05;color:var(--navy);}
+
+  /* SERVICE BLOCKS */
+  .services-list{background:var(--white);}
+  .svc-block{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:80px 0;border-bottom:1px solid #e8edf4;}
+  .svc-block:last-child{border-bottom:none;}
+  .svc-block.reverse .svc-block-img{order:-1;}
+  .svc-block-img img{width:100%;border-radius:8px;box-shadow:0 20px 60px rgba(10,22,40,.15);}
+  .svc-block-text{}
+  .svc-number{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(206,32,38,.08);line-height:1;margin-bottom:-10px;}
+  .svc-block-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,52px);color:var(--navy);margin-bottom:20px;}
+  .svc-block-text p{font-size:16px;color:#445;line-height:1.8;margin-bottom:16px;}
+  .svc-features{list-style:none;margin-top:24px;display:flex;flex-direction:column;gap:12px;}
+  .svc-features li{display:flex;align-items:center;gap:12px;font-size:15px;color:#445;}
+  .svc-features li::before{content:'✓';width:24px;height:24px;background:var(--red);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;}
+
+  /* CTA */
+  .cta-band{background:linear-gradient(90deg,var(--navy),var(--red-dk),var(--red));padding:80px 32px;text-align:center;position:relative;overflow:hidden;}
+  .cta-band::before{content:'TLL';font-family:'Bebas Neue',sans-serif;font-size:300px;color:rgba(255,255,255,.03);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+  .cta-band h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,58px);color:var(--white);margin-bottom:20px;position:relative;}
+  .cta-band p{font-size:18px;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto 40px;position:relative;}
+  .btn-primary{background:var(--white);color:var(--red);padding:16px 40px;font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:background .25s;display:inline-block;}
+  .btn-primary:hover{background:#f0f0f0;}
+
+  footer{background:#06101f;color:#8090ab;padding:60px 32px 32px;}
+  .footer-inner{max-width:1320px;margin:0 auto;}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:13px;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.08);}
+
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:none;}
+  .reveal-delay-1{transition-delay:.15s;}
+
+  @media(max-width:900px){
+    nav ul{display:none;position:fixed;top:0;right:-320px;height:100vh;width:280px;background:var(--navy);flex-direction:column;align-items:flex-start;padding:100px 32px 40px;gap:4px;transition:right .35s;z-index:999;}
+    nav ul.open{right:0;display:flex;}
+    .hamburger{display:flex;}
+    .svc-block{grid-template-columns:1fr;gap:40px;}
+    .svc-block.reverse .svc-block-img{order:0;}
+  }
+  @media(max-width:600px){.header-inner{padding:12px 20px;}section{padding:60px 20px;}.svc-block{padding:60px 0;}}
+
+
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* additional whatsapp styles */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html"><img src="./wp-content/uploads/2025/02/tll-logo.png" alt="TLL" onerror="this.style.display='none'"/></a>
+    <nav><ul id="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="project-logistics.html">Project Logistics</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul></nav>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Services</div>
+    <h1>Our<br/><span style="color:var(--red)">Services</span></h1>
+  </div>
+</div>
+
+<section class="services-list">
+  <div class="section-inner">
+
+    <div class="svc-block reveal">
+      <div class="svc-block-img">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp" alt="NVOCC Shipping" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'"/>
+      </div>
+      <div class="svc-block-text">
+        <div class="svc-number">01</div>
+        <h2>NVOCC Shipping</h2>
+        <p>As a Non-Vessel Operating Common Carrier (NVOCC), Total Logistics Limited manages your cargo without owning the vessels. This gives us the flexibility to offer competitive rates and customized solutions across multiple shipping lines.</p>
+        <p>We handle LCL (Less than Container Load) and FCL (Full Container Load) shipments to and from any major port worldwide.</p>
+        <ul class="svc-features">
+          <li>Full & partial container loads (FCL & LCL)</li>
+          <li>Multi-carrier flexibility for best rates</li>
+          <li>Door-to-door and port-to-port options</li>
+          <li>Real-time cargo tracking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc-block reverse reveal">
+      <div class="svc-block-text">
+        <div class="svc-number">02</div>
+        <h2>Customs Clearance</h2>
+        <p>Navigating customs regulations can be extraordinarily complex. Our licensed customs brokers ensure full compliance with Bangladesh Customs, NBR, and all applicable international regulations — eliminating delays and penalties.</p>
+        <ul class="svc-features">
+          <li>Import & export customs declarations</li>
+          <li>HS code classification & duty optimization</li>
+          <li>Document preparation & verification</li>
+          <li>Liaison with customs authorities</li>
+        </ul>
+      </div>
+      <div class="svc-block-img">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp" alt="Customs Clearance" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/534966_420202.webp'"/>
+      </div>
+    </div>
+
+    <div class="svc-block reveal">
+      <div class="svc-block-img">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/633630_371284.webp" alt="Air Freight" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/633630_371284.webp'"/>
+      </div>
+      <div class="svc-block-text">
+        <div class="svc-number">03</div>
+        <h2>Air Freight</h2>
+        <p>When speed is critical, our air freight service delivers. We work with all major airlines operating from Dhaka to provide express, standard, and charter air cargo solutions to every continent.</p>
+        <ul class="svc-features">
+          <li>Express & standard air cargo</li>
+          <li>Dangerous goods & temperature-sensitive cargo</li>
+          <li>Airport-to-airport & door-to-door delivery</li>
+          <li>Cargo insurance available</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc-block reverse reveal">
+      <div class="svc-block-text">
+        <div class="svc-number">04</div>
+        <h2>Land Transport & Warehousing</h2>
+        <p>Our land transport fleet covers all major industrial zones, ports, and inland container depots across Bangladesh. Combined with secure warehousing facilities, we provide complete first- and last-mile solutions.</p>
+        <ul class="svc-features">
+          <li>Port to factory delivery</li>
+          <li>Temperature-controlled warehousing</li>
+          <li>Inventory management & distribution</li>
+          <li>Cross-docking services</li>
+        </ul>
+      </div>
+      <div class="svc-block-img">
+        <img src="https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp" alt="Land Transport" onerror="this.src='https://tll.com.bd/wp-content/uploads/2025/02/21137_509155.webp'" style="filter:hue-rotate(180deg) brightness(.9)"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2 class="reveal">Need a Custom Logistics Solution?</h2>
+  <p class="reveal reveal-delay-1">Every shipment is unique. Let our experts design the perfect logistics plan for your business.</p>
+  <div class="reveal reveal-delay-1" style="position:relative;">
+    <a href="contact.html" class="btn-primary">Request a Quote</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2025 Total Logistics Limited. All rights reserved.</span>
+      <a href="index.html" style="color:var(--red);text-decoration:none;">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger=document.getElementById('hamburger'),nav=document.getElementById('main-nav');
+  hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!nav.contains(e.target))nav.classList.remove('open');});
+  const reveals=document.querySelectorAll('.reveal');
+  const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.1});
+  reveals.forEach(el=>observer.observe(el));
+</script>
+</body>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/8801959083615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+       alt="WhatsApp">
+</a>
+</html>
